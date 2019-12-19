@@ -1,0 +1,631 @@
+{
+    "id": "fa1f5e86dd1be1efb59e963f023b215b",
+    "name": "OpenCorporates",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "afe4a20d2683149e7a3c3c93d6a2bfb9",
+            "name": "Account Status",
+            "url": "api.opencorporates.comv0.4\/\/account_status",
+            "description": "nThis returns the status of your API Account (this information may also be retrieved at https:\/\/OpenCorporates",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "calls_remaining",
+                    "description": "this has two subvalues - today and this_month.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "expiry_date",
+                    "description": "when the api_plan runs out. If you are on a regular payment plan, this will be the date of the expiry of the current payment period.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "plan",
+                    "description": "the type of plan that you are on.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "status of the API account.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "usage",
+                    "description": "this has two subvalues - today and this_month.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "rawModeData": ""
+        },
+        {
+            "id": "38b5e872ce83d136afe182b8c27cd177",
+            "name": "Companies  Jurisdiction Code  Company Number Data",
+            "url": "api.opencorporates.comv0.4\/\/companies\/:jurisdiction_code\/:company_number\/data",
+            "description": "nThis returns the data held for the given company",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "data_type",
+                    "description": "this is a string value denoting the type of data, e.g. CompanyAddress, OfficialRegisterEntry",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "the given description of the datum as displayed on OpenCorporates. It is computed internally depending on the data_type. Together with the title this makes it easy to display a useful summary of the datum",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "the id given to the filing by the company registry",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "title",
+                    "description": "this is the title of the datum as displayed on OpenCorporates. It is computed internally depending on the data_type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "rawModeData": ""
+        },
+        {
+            "id": "c9b83dd9707742e9a14dff1374f33223",
+            "name": "Companies  Jurisdiction Code  Company Number Network",
+            "url": "api.opencorporates.comv0.4\/\/companies\/:jurisdiction_code\/:company_number\/network",
+            "description": "nThis returns the immediate &#39;computed corporate network&#39; for the given company as a set of control relationships (i",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "child_name",
+                    "description": "the name of the child entity",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "child_opencorporates_url",
+                    "description": "the OpenCorporates URL of the child entity",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "child_type",
+                    "description": "the type of entity the child is",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "confidence",
+                    "description": "a computed confidence in the relationship based on the underlying statements",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "parent_name",
+                    "description": "the name of the parent entity",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "parent_opencorporates_url",
+                    "description": "the OpenCorporates URL of the parent entity",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "parent_type",
+                    "description": "the type of entity the parent is",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "relationship_properties",
+                    "description": "any additional properties of the relationship, e.g. ownership percentage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "relationship_type",
+                    "description": "the type of relationship, e.g. subsidiary, shareholding. A subsdiary relationship typically comes from statutory filings (e.g. SEC 10-K reports); shareholding information typically coms from company registers, and is more granular",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "rawModeData": ""
+        },
+        {
+            "id": "2bf77050b4910c17d9002612e309ed12",
+            "name": "Companies Search",
+            "url": "api.opencorporates.comv0.4\/\/companies\/search",
+            "description": "nThis returns a collection of companies whose name matches the given search term (submitted as :q in the query parameters)",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "branch",
+                    "description": "Filter by branch status (boolean). This replaces the exclude_branches filter from previous versions. If true is supplied it will restrict to branch companies. If false is supplied it will exclude branch companies. If no value is supplied it will not filter by branch status.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "company_type",
+                    "description": "The type of the company, as defined by the company register.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country_code",
+                    "description": "NEWThe companies searched for can be restricted to a given country by passing a country_code query parameter. Note that in most cases the country and jurisdiction are the same, but for multi-jurisdiction country such as the US or Canada this can be very useful. You can also pass a pipe-separated list for searching multiple countries, e.g. country_code=gb|us",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "companies added to OpenCorporates after the given date.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "current_status",
+                    "description": "The current status of the company, as defined by the company register.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dissolution_date",
+                    "description": "NEWas with all date fields, dissolution_date can be supplied either as a specific date or as a span of dates. See incorporation_date for details",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dissolved_before",
+                    "description": "DeprecatedRestrict to companies with a dissolution_date before the given date. Deprecated in favour of new dissolution_date functionality.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dissolved_since",
+                    "description": "DeprecatedRestrict to companies with a dissolution_date after the given date. Deprecated in favour of new dissolution_date functionality.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_inactive",
+                    "description": "DeprecatedRestrict to companies that are active\/inactive. Deprecated in favour of new inactive functionality.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "NEWBy default when searching with a term (e.g. Barclays Bank) it mirrors the search on the main OpenCorporates website, searching name, normalised name, company number, previous names etc. By using the fields parameter, you can limit to a given field or fields. Options are name, normalised_name, company_number, heavily_normalised_number (company number excluding leading zeroes, for example), previous_names, postal_code.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "inactive",
+                    "description": "Filter by inactive status (boolean). This replaces the exclude_inactive filter from previous versions. If true is supplied it will restrict to inactive companies. If false is supplied it will exclude inactive companies. If no value is supplied it will not filter by inactive status.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "incorporated_before",
+                    "description": "DeprecatedRestrict to companies with an incorporation_date before the given date. Deprecated in favour of new incorporation_date functionality.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "incorporated_since",
+                    "description": "DeprecatedRestrict to companies with an incorporation_date after the given date. Deprecated in favour of new incorporation_date functionality.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "incorporation_date",
+                    "description": "NEWAs with all date fields, incorporation_date can be supplied either as a specific date or as a span of dates. If a span of dates is given it should be in the form 2009-08-22:2012-01-08. Either the start date or the end date may be omitted to make the date range unbounded at the start or end, e.g. :2012-01-08 would represent any date before 8 Jan 2012",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "industry_codes",
+                    "description": "NEWOne or more industry codes representing the industries the company operates in. This is part of our new industry code and the values submitted should be the industry_code uid, consisting of the industry_code :code_scheme_id and code, joined with a hyphen (see below for more on industry_codes). If you pass in multiple industry_codes separated by pipes you will get companies that match any of the given industry_codes; if you separate them by commas, you will get companies returned that match al",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "jurisdiction_code",
+                    "description": "The companies searched for can be restricted to a given jurisdiction by passing a jurisdiction_code query parameter. NEW You can now search multiple specific jurisdictions simultaneously by passing through a pipe-separated list, e.g. jurisdiction_code=gb|ie",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "nonprofit",
+                    "description": "NEWFilter by nonprofit company type (boolean). If true is supplied it will restrict to entities that we have identified as being of nonprofit company type. If false is supplied it will exclude such companies. If no value is supplied it will not filter by nonprofit company type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "registered_address",
+                    "description": "NEWThe companies searched for can be restricted by passing in an address or parts of an address. This performs a similar search to the basic companies search, so searching for 52 London will search for address with 52 and London in them, e.g. 52 Acacia Ave, London, NW1, or 52 London Road, St Albans",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "rawModeData": ""
+        },
+        {
+            "id": "ec88396b48abda28b853779ec79e59c6",
+            "name": "Corporate Groupings Search",
+            "url": "api.opencorporates.comv0.4\/\/corporate_groupings\/search",
+            "description": "nThis returns a collection of corporate_groupings whose name matches the given search term (submitted as :q in the query parameters)",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "rawModeData": ""
+        },
+        {
+            "id": "cd55c4a3b04ec51fedced9d3380d9f6f",
+            "name": "Data  ID",
+            "url": "api.opencorporates.comv0.4\/\/data\/:id",
+            "description": "nThis returns information on a given datum",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "rawModeData": ""
+        },
+        {
+            "id": "dc57688d7efb5998477383a8a50b50c0",
+            "name": "Industry Codes  Code Scheme ID",
+            "url": "api.opencorporates.comv0.4\/\/industry_codes\/:code_scheme_id",
+            "description": "nThis call returns further details about the code_scheme, together with the list of industry codes associated with it",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "rawModeData": ""
+        },
+        {
+            "id": "7594aa94410ec848356e3bfbfca86bda",
+            "name": "Jurisdictions Match",
+            "url": "api.opencorporates.comv0.4\/\/jurisdictions\/match",
+            "description": "nThis matches the name of a jurisdiction to the jurisdiction",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "rawModeData": ""
+        },
+        {
+            "id": "c278d94c1520bf89dfebe78585aa2040",
+            "name": "Officers  ID",
+            "url": "api.opencorporates.comv0.4\/\/officers\/:id",
+            "description": "nThis returns information on a particular officer (a director or an agent for a company)",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "address",
+                    "description": "NEWthe given address of the officer, if known (only for users with API key)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_of_birth",
+                    "description": "NEWthe date of birth of the officer, if known (only for users with API key)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "this is date on which the officership ended",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "position",
+                    "description": "the position held (e.g. director, secretary, CEO)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "this is date on which the officership started",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uid",
+                    "description": "the id given to the officer by the company registry",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "rawModeData": ""
+        },
+        {
+            "id": "99a17cb71ebf574ae7c611461b3c5bed",
+            "name": "Placeholder  ID",
+            "url": "api.opencorporates.comv0.4\/\/placeholder\/:id",
+            "description": "nA placeholder is we call something we believe is probably a company",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "company",
+                    "description": "if the placeholder has been matched to a company, the company will be included, together with basic information for the company.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "identifier",
+                    "description": "an identifier that is associated with the placeholder, for example an SEC CIK code.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "jurisdiction_code",
+                    "description": "The companies searched for can be restricted to a given jurisdiction by passing a jurisdiction_code query parameter. NEW You can now search multiple specific jurisdictions simultaneously by passing through a pipe-separated list, e.g. jurisdiction_code=gb|ie",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "jurisdiction_string",
+                    "description": "A plain text representation for the jurisdiction in which the placeholder is believed to be incorporated - this may be the name of a jurisdiction, of a country, or possibly an ISO 3166-2 code.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "the name of the entity",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "opencorporates_url",
+                    "description": "the url of the placeholder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "rawModeData": ""
+        },
+        {
+            "id": "9075374528a0a2c40d146fd5ad05181c",
+            "name": "Placeholders  ID Statements",
+            "url": "api.opencorporates.comv0.4\/\/placeholders\/:id\/statements",
+            "description": "nThis returns the statements associated with a given placeholder",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "rawModeData": ""
+        },
+        {
+            "id": "b2b7ccaf134c6e3e8324f1b977763faf",
+            "name": "Versions",
+            "url": "api.opencorporates.comv0.4\/\/versions",
+            "description": "nThis returns the current version of the API and supported versions",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "rawModeData": ""
+        }
+    ]
+}
