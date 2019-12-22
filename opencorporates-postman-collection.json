@@ -1,5 +1,5 @@
 {
-    "id": "fa1f5e86dd1be1efb59e963f023b215b",
+    "id": "5296eb1e2a53c1bee67b623637015af0",
     "name": "OpenCorporates",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "afe4a20d2683149e7a3c3c93d6a2bfb9",
+            "id": "d193cd9c7c8db0c8ee522bd1afa30442",
             "name": "Account Status",
             "url": "api.opencorporates.comv0.4\/\/account_status",
             "description": "nThis returns the status of your API Account (this information may also be retrieved at https:\/\/OpenCorporates",
@@ -65,11 +65,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "collectionId": "5296eb1e2a53c1bee67b623637015af0",
             "rawModeData": ""
         },
         {
-            "id": "38b5e872ce83d136afe182b8c27cd177",
+            "id": "6c8cf8de17d067ffaa608dbf61edff2f",
             "name": "Companies  Jurisdiction Code  Company Number Data",
             "url": "api.opencorporates.comv0.4\/\/companies\/:jurisdiction_code\/:company_number\/data",
             "description": "nThis returns the data held for the given company",
@@ -117,11 +117,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "collectionId": "5296eb1e2a53c1bee67b623637015af0",
             "rawModeData": ""
         },
         {
-            "id": "c9b83dd9707742e9a14dff1374f33223",
+            "id": "1ae3ec0c72c59e08242b25438eeb217c",
             "name": "Companies  Jurisdiction Code  Company Number Network",
             "url": "api.opencorporates.comv0.4\/\/companies\/:jurisdiction_code\/:company_number\/network",
             "description": "nThis returns the immediate &#39;computed corporate network&#39; for the given company as a set of control relationships (i",
@@ -204,11 +204,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "collectionId": "5296eb1e2a53c1bee67b623637015af0",
             "rawModeData": ""
         },
         {
-            "id": "2bf77050b4910c17d9002612e309ed12",
+            "id": "4f84dd0b020c3a2d702c236f8bc99a8b",
             "name": "Companies Search",
             "url": "api.opencorporates.comv0.4\/\/companies\/search",
             "description": "nThis returns a collection of companies whose name matches the given search term (submitted as :q in the query parameters)",
@@ -354,11 +354,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "collectionId": "5296eb1e2a53c1bee67b623637015af0",
             "rawModeData": ""
         },
         {
-            "id": "ec88396b48abda28b853779ec79e59c6",
+            "id": "26cd0c6bf970b11213a5284736bc8f3b",
             "name": "Corporate Groupings Search",
             "url": "api.opencorporates.comv0.4\/\/corporate_groupings\/search",
             "description": "nThis returns a collection of corporate_groupings whose name matches the given search term (submitted as :q in the query parameters)",
@@ -377,11 +377,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "collectionId": "5296eb1e2a53c1bee67b623637015af0",
             "rawModeData": ""
         },
         {
-            "id": "cd55c4a3b04ec51fedced9d3380d9f6f",
+            "id": "4a1cc4ca0f6a15c43d869c8ad1b414f5",
             "name": "Data  ID",
             "url": "api.opencorporates.comv0.4\/\/data\/:id",
             "description": "nThis returns information on a given datum",
@@ -400,11 +400,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "collectionId": "5296eb1e2a53c1bee67b623637015af0",
             "rawModeData": ""
         },
         {
-            "id": "dc57688d7efb5998477383a8a50b50c0",
+            "id": "040b257cf576246970ab105ae04500f0",
             "name": "Industry Codes  Code Scheme ID",
             "url": "api.opencorporates.comv0.4\/\/industry_codes\/:code_scheme_id",
             "description": "nThis call returns further details about the code_scheme, together with the list of industry codes associated with it",
@@ -423,11 +423,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "collectionId": "5296eb1e2a53c1bee67b623637015af0",
             "rawModeData": ""
         },
         {
-            "id": "7594aa94410ec848356e3bfbfca86bda",
+            "id": "0bbae1edc6f0cd4d1a817ff2bc1263ee",
             "name": "Jurisdictions Match",
             "url": "api.opencorporates.comv0.4\/\/jurisdictions\/match",
             "description": "nThis matches the name of a jurisdiction to the jurisdiction",
@@ -446,11 +446,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "collectionId": "5296eb1e2a53c1bee67b623637015af0",
             "rawModeData": ""
         },
         {
-            "id": "c278d94c1520bf89dfebe78585aa2040",
+            "id": "c69f55c329d7c82507bea5a67d45aa46",
             "name": "Officers  ID",
             "url": "api.opencorporates.comv0.4\/\/officers\/:id",
             "description": "nThis returns information on a particular officer (a director or an agent for a company)",
@@ -512,11 +512,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "collectionId": "5296eb1e2a53c1bee67b623637015af0",
             "rawModeData": ""
         },
         {
-            "id": "99a17cb71ebf574ae7c611461b3c5bed",
+            "id": "51bb3fe8cd0595654bfc025ab22b087b",
             "name": "Placeholder  ID",
             "url": "api.opencorporates.comv0.4\/\/placeholder\/:id",
             "description": "nA placeholder is we call something we believe is probably a company",
@@ -578,11 +578,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "collectionId": "5296eb1e2a53c1bee67b623637015af0",
             "rawModeData": ""
         },
         {
-            "id": "9075374528a0a2c40d146fd5ad05181c",
+            "id": "a0b990e2efed12381c1f331917937966",
             "name": "Placeholders  ID Statements",
             "url": "api.opencorporates.comv0.4\/\/placeholders\/:id\/statements",
             "description": "nThis returns the statements associated with a given placeholder",
@@ -601,11 +601,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "collectionId": "5296eb1e2a53c1bee67b623637015af0",
             "rawModeData": ""
         },
         {
-            "id": "b2b7ccaf134c6e3e8324f1b977763faf",
+            "id": "ffdbb6354201a305b816d3218d322f8e",
             "name": "Versions",
             "url": "api.opencorporates.comv0.4\/\/versions",
             "description": "nThis returns the current version of the API and supported versions",
@@ -624,7 +624,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fa1f5e86dd1be1efb59e963f023b215b",
+            "collectionId": "5296eb1e2a53c1bee67b623637015af0",
             "rawModeData": ""
         }
     ]
