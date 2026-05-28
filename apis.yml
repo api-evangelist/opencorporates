@@ -1,0 +1,32 @@
+aid: opencorporates
+name: OpenCorporates
+description: "Data on corporate entities and directors in many countries"
+url: http://api.opencorporates.com/documentation/API-Reference
+specificationVersion: '0.20'
+created: '2026-05-28'
+modified: '2026-05-28'
+x-source: public-apis/public-apis
+x-category: "Open Data"
+x-tier: 3
+x-tier-reason: bulk-registered-from-public-apis
+tags:
+  - Open Data
+  - Public APIs
+apis:
+  - name: OpenCorporates
+    description: "Data on corporate entities and directors in many countries"
+    humanURL: http://api.opencorporates.com/documentation/API-Reference
+    baseURL: http://api.opencorporates.com/documentation/API-Reference
+    tags:
+      - Open Data
+    properties:
+      - type: Documentation
+        url: http://api.opencorporates.com/documentation/API-Reference
+common:
+  - type: Website
+    url: http://api.opencorporates.com/documentation/API-Reference
+  - type: PublicAPIsListing
+    url: https://github.com/public-apis/public-apis
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
